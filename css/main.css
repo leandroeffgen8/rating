@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/*
+font-family: 'Dancing Script', cursive;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('../images/bg.png') repeat top left;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 500px;
+    margin: 3rem auto;
+}
+
+.container h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.stars{
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.stars li{
+    cursor: pointer;
+}
+
+.icon-stars::before{
+    content: '\f005';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: normal;
+}
+.icon-stars.active:before{
+    content: '\f005';
+    font-weight: bold;
+}
+
+.container p{
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+}
